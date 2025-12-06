@@ -213,6 +213,12 @@ What the code does at a high level:
 - Improve the parser to allow multi-letter variable names (e.g., `x1`, `y2`) or evaluate simple RHS expressions.
 - Extend the algorithm to handle `>=` constraints and cases requiring artificial variables (two-phase Simplex).
 
+If you want, I can now:
+- (A) insert inline comments into `public/js/solver.js` so the code itself explains what each block does, or
+- (B) create a short "Quick Start" example in this doc showing exact inputs and the first two tableau outputs (so you can compare behavior with the app).
+
+Tell me which option you prefer and I will implement it next.
+Tell me which option you prefer and I will implement it next.
 
 ---
 
@@ -333,6 +339,11 @@ After all tableaus the function builds a verification block:
 ### 11) Quick mental model (one-paragraph)
 - Think of the tableau as a spreadsheet where each row is a basic variable expressed in terms of others plus a number (RHS). Each pivot step picks a column to enter (it looks promising for improving the objective) and a row to leave (smallest positive ratio keeps solutions feasible). The pivot algebra (normalize + eliminate) swaps the entering variable into the basis and records the arithmetic so you can follow it step-by-step.
 
+If you'd like, I can now:
+- (A) insert inline comments directly into `public/js/solver.js` (I will add beginner-friendly comments and short examples in the code), or
+- (B) append a short worked example to this file showing exact inputs and the first two tableaus produced by the current implementation (so you can compare the app's output to the doc).
+
+Tell me which option you want next and I'll implement it.
 
 ---
 
@@ -404,3 +415,4 @@ Notes:
 
 ---
 
+Done — the example above is now appended to this documentation file to help you match the code's output with hand calculations.
