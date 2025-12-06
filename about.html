@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/solver.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <svg fill="#0f4c75" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3.5 7v10l8.5 5 8.5-5V7L12 2zM12 4.74l6.65 3.75L12 12.54 5.35 8.49 12 4.74zm6.5 11.7-6.5 3.82-6.5-3.82V8.71l6.5 3.55 6.5-3.55v7.73z"/></svg>
+        <span class="logo-text">About</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Simplex.html">Solver</a>
+        <a href="notes.html">Notes</a>
+        <a href="about.html" class="active">About Us</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons">menu</span>
+      </button>
+    </nav>
+
+
+    <main class="about-main">
+      <section class="about-hero hero">
+        <div class="hero-text hero-about-text">
+          <span class="eyebrow">Our story</span>
+          <h1 class="glow-headline">We make optimization beautiful  and understandable</h1>
+          <p class="lead">Simplex Harmony is an educational tool built by engineers, mathematicians, and designers. Our goal is to make the Simplex method approachable  from visual step-by-step work to high-quality exports for learning and teaching.</p>
+
+          <div class="btn-group">
+            <a href="Simplex.html" class="btn btn-start">Open the Solver</a>
+            <a href="notes.html" class="btn btn-learn">Read the tutorial</a>
+          </div>
+        </div>
+
+        <aside class="hero-image hero-visual">
+          <div class="matrix-card">
+            <div class="matrix-header">Example tableau</div>
+            <table aria-hidden="true">
+              <thead>
+                <tr><th></th><th>x1</th><th>x2</th><th>s1</th><th>rhs</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>z</td><td>1</td><td>-2</td><td>0</td><td>0</td></tr>
+                <tr><td>r1</td><td>0</td><td>1</td><td>1</td><td>4</td></tr>
+                <tr><td>r2</td><td>1</td><td>0</td><td>0</td><td>3</td></tr>
+              </tbody>
+            </table>
+            <div class="matrix-decor"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="about-values card-section">
+        <h2>What we stand for</h2>
+        <div class="cards values-cards">
+          <article class="card value-card">
+            <div class="icon">⚡</div>
+            <h3 class="card-title">Clarity over complexity</h3>
+            <p class="card-desc">We explain each step of the algorithm with clear visuals and real examples  no opaque magic.</p>
+          </article>
+
+          <article class="card value-card">
+            <div class="icon">🧠</div>
+            <h3 class="card-title">Sound math</h3>
+            <p class="card-desc">All results are verifiable and numerically stable  backed by expert review and testing.</p>
+          </article>
+
+          <article class="card value-card">
+            <div class="icon">🌱</div>
+            <h3 class="card-title">Accessible learning</h3>
+            <p class="card-desc">Intuitive experiences for students and concise tooling for practitioners.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="about-team">
+        <div class="team-grid">
+          <div class="team-card fade-up">
+            <div class="team-card-header">
+              <img class="team-avatar photo" src="resources/avatars/anquilo.jpg" alt="Glen Ford Anquilo photo">
+              <svg class="team-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#7c3aed" stroke-width="2"/>
+                <path d="M50 30 L60 45 L75 45 L65 55 L70 70 L50 60 L30 70 L35 55 L25 45 L40 45 Z" fill="#7c3aed"/>
+              </svg>
+            </div>
+            <div class="team-content">
+              <h4>Glen Ford Anquilo</h4>
+              <p class="team-role">2nd Year BSIT Student, University of Eastern Philippines</p>
+              <blockquote class="team-quote">"Code is poetry written in logic."</blockquote>
+              <div class="spec-list">
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="spec-label">Team Lead</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">Java</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span class="spec-label">JavaScript</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5zM7 15c1.5 2 3.5 3 5 3s3.5-1 5-3" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">Python</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card-header">
+              <img class="team-avatar photo" src="resources/avatars/r.jpg" alt="Rence A. Escala photo">
+              <svg class="team-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#06b6d4" stroke-width="2"/>
+                <rect x="30" y="35" width="40" height="30" fill="none" stroke="#06b6d4" stroke-width="2" rx="4"/>
+                <circle cx="40" cy="45" r="3" fill="#06b6d4"/>
+                <circle cx="60" cy="45" r="3" fill="#06b6d4"/>
+                <path d="M40 55 Q50 60 60 55" stroke="#06b6d4" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="team-content">
+              <h4>Rence A. Escala</h4>
+              <p class="team-role">2nd Year BSIT Student, University of Eastern Philippines</p>
+              <blockquote class="team-quote">"Design is where creativity meets function."</blockquote>
+              <div class="spec-list">
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M7 21V7" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><span class="spec-label">Web Design</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v6H3zM3 14h18v6H3z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">HTML &amp; CSS</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span class="spec-label">JavaScript</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card-header">
+              <img class="team-avatar photo" src="resources/avatars/g.jpg" alt="Mikaela N. Espiña photo">
+              <svg class="team-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#2bd67b" stroke-width="2"/>
+                <circle cx="35" cy="40" r="6" fill="none" stroke="#2bd67b" stroke-width="2"/>
+                <circle cx="65" cy="40" r="6" fill="none" stroke="#2bd67b" stroke-width="2"/>
+                <circle cx="50" cy="60" r="6" fill="none" stroke="#2bd67b" stroke-width="2"/>
+                <line x1="35" y1="40" x2="50" y2="60" stroke="#2bd67b" stroke-width="2"/>
+                <line x1="65" y1="40" x2="50" y2="60" stroke="#2bd67b" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="team-content">
+              <h4>Mikaela N. Espiña</h4>
+              <p class="team-role">2nd Year BSIT Student, University of Eastern Philippines</p>
+              <blockquote class="team-quote">"Data tells stories when organized wisely."</blockquote>
+              <div class="spec-list">
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">Java</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">C#</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5zM7 15c1.5 2 3.5 3 5 3s3.5-1 5-3" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">Python</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card-header">
+              <img class="team-avatar photo" src="resources/avatars/m.jpg" alt="Malou Gepollo photo">
+              <svg class="team-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#ffa500" stroke-width="2"/>
+                <path d="M50 35 L55 45 L65 45 L57 52 L60 62 L50 56 L40 62 L43 52 L35 45 L45 45 Z" fill="none" stroke="#ffa500" stroke-width="2"/>
+                <circle cx="50" cy="50" r="4" fill="#ffa500"/>
+              </svg>
+            </div>
+            <div class="team-content">
+              <h4>Malou Gepollo</h4>
+              <p class="team-role">2nd Year BSIT Student, University of Eastern Philippines</p>
+              <blockquote class="team-quote">"Quality is never an accident; it's always a choice."</blockquote>
+              <div class="spec-list">
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h6l2 4 10-8" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><span class="spec-label">Testing</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg><span class="spec-label">Documentation</span></span>
+                <span class="spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7 7 .5-5 4 1.5 7L12 18l-6.5 3.5L7 13 2 9.5 9 9.5 12 2z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg><span class="spec-label">Quality Assurance</span></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="download-module polished-download">
+          <h3>Want a quick lecture slide?</h3>
+          <p class="muted-sm">Export an example presentation for class or self-study.</p>
+          <div class="download-buttons">
+            <a class="download-btn pdf" href="#">Download (PDF)</a>
+            <a class="download-btn ppt" href="#">Download (PPT)</a>
+            <p>Click this link to access online: </p> <a href="https://simplexssolver.web.app " target="_blank">Visit Online</a>
+          </div>
+        </aside>
+      </div>
+
+    </main>
+  </div>
+  <script src="js/nav.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

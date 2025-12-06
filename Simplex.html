@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplex Method Solver</title>
+    <link rel="stylesheet" href="css/solver.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+    <nav>
+      <div class="logo">
+        <svg fill="#0f4c75" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3.5 7v10l8.5 5 8.5-5V7L12 2zM12 4.74l6.65 3.75L12 12.54 5.35 8.49 12 4.74zm6.5 11.7-6.5 3.82-6.5-3.82V8.71l6.5 3.55 6.5-3.55v7.73z"/></svg>
+        <span class="logo-text">Simplex Method Calculator</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Simplex.html">Solver</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons">menu</span>
+      </button>
+    </nav>
+        <header>
+            <h1>Simplex Method Solver</h1>
+            <p class="description">Solve linear programming problems using the Simplex Method with step-by-step explanations</p>
+        </header>
+        
+        <div class="main-grid">
+        <section class="input-section">
+            <h2>Problem Input</h2>
+            
+            <div class="form-group">
+                <label for="objective">Objective Function (Maximize Z)</label>
+                <input type="text" id="objective" placeholder="e.g., 1.5x + 1.2y" value="1.5x + 1.2y">
+            </div>
+            
+            <div class="form-group">
+                <label>Constraints</label>
+                <div id="constraints-container">
+                    <div class="constraint-row">
+                        <input type="text" class="constraint-input" placeholder="e.g., 2x + 3y" value="2x + 3y">
+                        <select class="constraint-select">
+                            <option value="<=" selected>&lt;=</option>
+                            <option value=">=">&gt;=</option>
+                            <option value="=">=</option>
+                        </select>
+                        <input type="text" class="constraint-rhs" placeholder="RHS" value="24">
+                    </div>
+                    <div class="constraint-row">
+                        <input type="text" class="constraint-input" placeholder="e.g., 6x + 3y" value="6x + 3y">
+                        <select class="constraint-select">
+                            <option value="<=" selected>&lt;=</option>
+                            <option value=">=">&gt;=</option>
+                            <option value="=">=</option>
+                        </select>
+                        <input type="text" class="constraint-rhs" placeholder="RHS" value="48">
+                    </div>
+                </div>
+                <button type="button" id="add-constraint" class="btn-secondary">Add Constraint</button>
+            </div>
+            
+            <div class="button-group">
+                <button id="solve-btn" class="btn-primary">Solve Simplex</button>
+                <button id="reset-btn" class="btn-secondary">Reset</button>
+            </div>
+        </section>
+        
+        <section class="output-section" id="output-section" style="display: none;">
+            <h2>Solution Steps</h2>
+            <div id="solution-steps"></div>
+        </section>
+        </div>
+    </div>
+    <script src="js/solver.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
